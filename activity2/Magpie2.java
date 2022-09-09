@@ -53,6 +53,18 @@ public class Magpie2
         {
             response = "He sounds like an excellent teacher!";
         }
+        else if (statement.indexOf("monopoly") >= 0)
+        {
+            response = "I despise monopoly.";
+        }
+        else if (statement.indexOf("Zimbabwe") >= 0)
+        {
+            response = "Zimbabwe more like zamboni";
+        }
+        else if (statement.indexOf("Nuts") >= 0)
+        {
+            response = "Squirel?";
+        }
         else
         {
             response = getRandomResponse();
