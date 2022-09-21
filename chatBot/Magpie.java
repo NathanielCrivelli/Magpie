@@ -50,21 +50,47 @@ public class Magpie
                 || findKeyword(statement, "brother") >= 0)
         {
             response = "Tell me more about your family.";
-        } else if (findKeyword(statement, "Where were you born") >= 0)
+        } else if (findKeyword(statement, "how old") >= 0)
+        {
+            response = "I am 143 years old.";
+        }
+        else if (findKeyword(statement, "famous") >= 0)
+        {
+            response = "I was famous for the most famous equation in the world, E = mc^2";
+        }
+        else if (findKeyword(statement, "your name") >= 0)
+        {
+            response = "My name is Albert Einstein";
+        }
+        else if (findKeyword(statement, "my name") >= 0)
+        {
+            response = "Mr Jaffe.";
+        }
+        else if (findKeyword(statement, "born") >= 0)
         {
             response = "Ulm, Germany on March 14th 1879.";
-        } else if (findKeyword(statement, "Are you married") >= 0
-                || findKeyword(statement, "Were you married") >= 0)
+        } else if (findKeyword(statement, "married") >= 0
+                || findKeyword(statement, "married") >= 0)
         {
             response = "I was married to Mileva Maric, then Elsa Einstein.";
-        } else if (findKeyword(statement, "Where do you live") >= 0)
+        } else if (findKeyword(statement, "did you live") >= 0)
+        {
+            response = "I lived in many places but I was born in Ulm, then went to Switzerland.";
+        }
+        else if (findKeyword(statement, "do you live") >= 0)
         {
             response = "In the Delaware river.";
-        } else if (findKeyword(statement, "Do you have any children") >= 0)
+        } else if (findKeyword(statement, "children") >= 0)
         {
             response = "Yes, Eduard Einstein, Liserl Einstein, and Hans Albert Einstein.";
-        } else if (findKeyword(statement, "
-
+        } else if (findKeyword(statement, "When did you die") >= 0)
+        {
+            response = "I died on April 18, 1955.";
+        }
+        else if(findKeyword(statement, "Where did you die") >= 0)
+        {
+            response = "Princeton, New Jersey.";
+        }
         // Responses which require transformations
         else if (findKeyword(statement, "I want to", 0) >= 0)
         {
@@ -279,11 +305,7 @@ public class Magpie
     private String [] randomResponses = {"Interesting, tell me more",
             "Hmmm.",
             "Do you really think so?",
-            "You don't say.",
-            "L bozo.",
-            "No zambonis?",
-            "Charlie and Nates monopoly is the best AP project and totally didnt get them a 3",
-            "Andrew is bad at valorant"
+            "You don't say."
     };
     
 }
